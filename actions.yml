@@ -1,0 +1,12 @@
+name: chekov'
+description: 'Run Chekov on a speific directory'
+inputs:
+  checkov-folder:  # id of input
+    description: 'Folder to Scan'
+    required: true
+    default: 'modules'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  args:
+    - ${{ inputs.checkov-folder }}
