@@ -1,4 +1,4 @@
-FROM alpine:3.10 
+FROM alpine:py3-astroid
 
 # Copy the script and the requirements.txt to the dockerfile
 COPY  entrypoint.sh /entrypoint.sh
